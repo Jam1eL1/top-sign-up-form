@@ -14,6 +14,8 @@ body {
     background-color: var(--main--color);
     font-family: 'MyCustomFont', sans-serif;
     display: flex;
+    height: 100vh;
+    margin: 0;
 }
 
 .left-column {
@@ -80,5 +82,10 @@ input:focus {
 }
 
 button {
-    color: var(--button--color);
+    color: #ffffff;
+    background-color: var(--button--color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
