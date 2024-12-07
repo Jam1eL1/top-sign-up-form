@@ -1,0 +1,56 @@
+:root {
+    --main--color: #3498db;
+    --button--color: #596D48;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Norse-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--main--color);
+    font-family: 'MyCustomFont', sans-serif;
+    display: flex;
+}
+
+.left-column {
+    background-image: url('images/johny-goerend-Oz2ZQ2j8We8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right-column {
+
+}
+
+.signup-form label {
+    text-transform: uppercase;
+}
+
+input {
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: #E5E7EB;
+}
+
+input:focus {
+    border-color: rgb(53, 129, 243);
+    box-shadow: 0 0 5px rbga(53, 129, 243, 0.5);
+}
+
+button {
+    color: var(--button--color);
+}
