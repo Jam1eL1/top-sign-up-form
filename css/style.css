@@ -1,5 +1,5 @@
 :root {
-    --main--color: #3498db;
+    --main--color: #ffffff;
     --button--color: #596D48;
 }
 
@@ -17,14 +17,42 @@ body {
 }
 
 .left-column {
-    background-image: url('images/johny-goerend-Oz2ZQ2j8We8-unsplash.jpg');
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/johny-goerend-Oz2ZQ2j8We8-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
-.right-column {
+.logo-background {
+    background-color: #656161e1;
+    max-width: 100%; /* Ensures the logo is responsive */
+    height: auto; /* Maintains aspect ratio */
+    opacity: 0.8; /* Adjusts transparency */
+    transform: translateY(-50%); 
+    overflow: hidden;
+    width: 100%;
+    display: flex;
 
+}
+
+.logo-background img{
+    width: 20%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+.right-column {
+    flex: 2;
+
+}
+
+.signup-form {
+    display: flex-wrap;
 }
 
 .signup-form label {
