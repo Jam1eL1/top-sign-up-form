@@ -48,6 +48,15 @@ body {
     display: block;
     object-fit: contain;
 }
+
+.photo-credit {
+    color: #fafafa;
+}
+
+.photo-credit > a {
+    color: inherit;
+}
+
 .right-column {
     flex: 2;
 
