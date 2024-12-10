@@ -21,7 +21,8 @@ body {
 .left-column {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-image: url('/images/johny-goerend-Oz2ZQ2j8We8-unsplash.jpg');
     background-size: cover;
@@ -35,22 +36,30 @@ body {
     max-width: 100%; /* Ensures the logo is responsive */
     height: auto; /* Maintains aspect ratio */
     opacity: 0.8; /* Adjusts transparency */
-    transform: translateY(-50%); 
+    transform: translateY(100%); 
     overflow: hidden;
     width: 100%;
     display: flex;
-
+    justify-content: center;
 }
 
-.logo-background img{
+.logo-background img {
     width: 20%;
     height: auto;
     display: block;
     object-fit: contain;
 }
 
-.photo-credit {
+.logo-background p {
+    font-size: 4rem;
     color: #fafafa;
+    text-transform: uppercase;
+}
+
+.photo-credit {
+    font-size: 1rem;
+    color: #fafafa;
+    display: block;
 }
 
 .photo-credit > a {
