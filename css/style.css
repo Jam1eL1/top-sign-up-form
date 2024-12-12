@@ -19,12 +19,12 @@ body {
 }
 
 .left-column {
-    flex: 1;
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url('/images/johny-goerend-Oz2ZQ2j8We8-unsplash.jpg');
+    background-image: url('/images/jane-palash-VqNGQ-lsHFw-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,11 +68,15 @@ body {
 
 .right-column {
     flex: 2;
-    padding: 100px 20px 30px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 .signup-form {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
