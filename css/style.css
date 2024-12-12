@@ -32,10 +32,10 @@ body {
 }
 
 .logo-background {
-    background-color: #656161e1;
+    background-color: #181616e0;
     max-width: 100%; /* Ensures the logo is responsive */
     height: auto; /* Maintains aspect ratio */
-    opacity: 0.8; /* Adjusts transparency */
+    opacity: 0.6; /* Adjusts transparency */
     transform: translateY(100%); 
     overflow: hidden;
     width: 100%;
@@ -73,13 +73,27 @@ body {
 }
 
 .signup-form {
-    display: flex-wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.signup-form label {
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-row label {
     text-transform: uppercase;
 }
 
+.form-row input {
+    width: 100%;
+}
+
+.row-group {
+    display: flex;
+    flex-direction: column;
+}
 input {
     border: 2px solid #000;
     margin-bottom: 15px;
